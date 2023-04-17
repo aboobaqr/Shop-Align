@@ -1,0 +1,231 @@
+Body {
+    background: linear-gradient(to right, rgba(0,0,0), rgba(0,0,0, 0.7)), url(./resources/image2.png);
+    background-size: auto;
+    height: 100vh;
+    font-family: sans-serif;
+    color: #ffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.mobile-menu {
+    height: 40px;
+    width: 100%;
+    margin-top: 0;
+    background-color: rgb(64, 61, 61);
+    display: none;
+}
+
+.menu-btn {
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+}
+
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin-top: 40px;
+}
+.logo > h1 {
+    color: #ffff;
+    text-align: center;
+    font-size: 70px;
+    font-family: kaushan script;
+}
+.red {
+    color:#e74c3c;
+}
+.logo > p {
+    text-align: center;
+    line-height: 0;
+    font-size: smaller;
+}
+
+.search > input {
+    width: 25vh;
+    height: 2vh;
+    font-size: xx-small;
+    border-radius: 7px;
+    background: #0000;
+    color: #ffff;
+    padding: 5px;
+    border: solid 3px rgb(64, 61, 61);
+}
+.cart > img {
+    height: 27px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.cart > p {
+    font-size: x-small;
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav {
+    height: 60px;
+    width: 75%;
+    background-color: #9f989866;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+.nav > a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.main-content {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.main-content > img {
+    height: 59vh;
+    margin-left: 10vh;
+}
+.main-text{
+    margin-left: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-text > h3 {
+    font-family:monospace;
+    font-size: 50px;
+    line-height: 0;
+}
+.main-text > h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 125px;
+}
+.main-text > p {
+    padding: 15px;
+    background-color:#e74c3c;
+    border-radius: 7px;
+    width: 18vh;
+    text-align: center;
+    font-size: x-small;
+}
+
+.account{
+    position: absolute;
+    right: 11vh;
+    top: 87vh;
+}
+.account > img {
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.account > p {
+    font-size: x-small;
+    display: inline-block;
+    vertical-align: middle;
+}
+.front-pg-foot {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.foot-cont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.foot-cont > p {
+font-family: Arial, Helvetica, sans-serif;
+font-size: small;
+}
+.foot-cont > small {
+    padding: 8px;
+    font-size: xx-small;
+    background-color:#e74c3c;
+    border-radius: 3px;
+}
+.scroll {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    top: 80vh;
+    left: 95vh;
+}
+.small-circle {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-color: #ffff;
+}
+.small-circle-2 {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 3px solid #ffff;
+}
+
+
+@media only screen and (max-width: 550px){
+    .mobile-menu {
+        display: block;
+        width: 100%;
+    }
+    .search > input {
+        width: 15vh;
+    }
+    .nav{
+        display: none;
+    }
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .logo {
+        order: 3;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+    .main-content > img{
+        height: 32vh;
+        margin: 20px 0;
+    }
+
+    .main-text{
+        margin: 20px 0;
+    }
+    .main-text > h3 {
+        font-size: 25px;
+    }
+    .main-text > h1{
+        font-size: 40px;
+    }
+    .main-text > p {
+        padding: 8px;
+        background-color:#e74c3c;
+        border-radius: 7px;
+        width: 14vh;
+    }
+    .account{
+        position: absolute;
+        left: 0;
+    }
+    .front-pg-foot{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .scroll {
+        position: absolute;
+        top: 80vh;
+        left: 0;
+    }
+}
